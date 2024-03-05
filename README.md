@@ -33,7 +33,7 @@ Also, Test Driven Design was the required methodology for this challenge and it 
 ## Test Driven Design Process
 
 Five different tests were created to drive the development of the system:
-1. testMintERC20 would have to be fulfilled to check that upon calling of the function mintToken on the contract on chain 1, the token A (which in a live testnet could be the CCIP LnM token), got minted.
+1. testMintERC20 would have to be fulfilled to check that upon calling of the function `mintToken()` on the contract on chain 1, the token A (which in a live testnet could be the CCIP LnM token), got minted.
 2. testMessageSentAfterMint would ensure that the message conveying the minted amount to the twin contract on chain 2 got sent.
 3. testMessageReceivedOnTwinContract would, upon fulfillment prove that the message gets received by the contract on chain 2.
 4. testTokensMintedOnMessageReceived checked that token B (which in a live testnet could be the CCIP BnM token) got minted by the twin contract on chain 2 in the same amount as token A on chain 1.
@@ -68,7 +68,7 @@ cd ERC20CrossChainMirror
 forge test
 ```
 
-If you want to run each test separately as was done throughout the process described above you can just comment out all the functionality in the mintToken and mintAndBridge functions that happens later in the workflow than the one it intends to verify. For example, in order to run the testMintERC20 test successfully, comment out all the lines in those two functions except for these:
+If you want to run each test separately as was done throughout the process described above you can just comment out all the functionality in the `mintToken()` and `mintAndBridge()` functions that happens later in the workflow than the one it intends to verify. For example, in order to run the testMintERC20 test successfully, comment out all the lines in those two functions except for these:
 ```Solidity
         ITokenToMint token = ITokenToMint(address(i_erc20TokenToMint));
         token.mint(address(this), amount);
