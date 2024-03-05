@@ -1,4 +1,4 @@
-# TDD ERC20 Cross-chain Mirror Contracts
+# TDD ERC20 Cross-Chain Mirror Contracts
 
 ## Table of Contents
 - [Introduction](#introduction)
