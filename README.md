@@ -41,19 +41,31 @@ Five different tests were created to drive the development of the system:
 
 Below can be seen the passing results of all five tests, once the functionality they aimed to verify was implemented, which was done sequentially, one at a time:
 #### testMintERC20
-![Test 1](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/f723aada-28fb-4f42-9d84-3777684b479b)
+<p align="center">
+  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/f723aada-28fb-4f42-9d84-3777684b479b">
+</p>
 #### testMessageSentAfterMint
-![Test 2](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/72f58125-f285-4eb5-b49b-9a9f93beac9c)
+<p align="center">
+  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/72f58125-f285-4eb5-b49b-9a9f93beac9c">
+</p>
 #### testMessageReceivedOnTwinContract
-![Test 3](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/63813925-aea4-4bc5-80f8-8c43da839238)
+<p align="center">
+  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/63813925-aea4-4bc5-80f8-8c43da839238">
+</p>
 #### testTokensMintedOnMessageReceived
-![Test 4](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/60dda28f-c88f-4e4d-9d7d-0d30afd9b7d7)
+<p align="center">
+  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/60dda28f-c88f-4e4d-9d7d-0d30afd9b7d7">
+</p>
 #### testTokensMintedAndBridgedOnMessageReceived
-![Test 5](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/df00097b-7462-4d66-b3d8-bd57272950b2)
+<p align="center">
+  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/df00097b-7462-4d66-b3d8-bd57272950b2">
+</p>
 
 However, after the functionality for each test was achieved and it passed, implementing the functionality enforced by the following test caused the previous one to fail. This was because the addition of the subsequential actions to be performed, which needed further setup, which had not been necessary in previous tests, caused the transactions to revert. Of course, for a real project this would have to be corrected, since the goal is for all tests to pass, however, this being a challenge in which TDD was mandatory, leaving the tests as they were before the full functionality was implemented seemed like a good way to prove said methodology was used. Thus, below can be seen how, at the end of the design process, the only passing test was the last one, while all the others, as explained, lacked the necessary setup for the transactions initiated in them not to revert.
 
-![All tests](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/74f7a113-aaa9-4de3-b461-db7e2f64777f)
+<p align="center">
+  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/74f7a113-aaa9-4de3-b461-db7e2f64777f">
+</p>
 
 ## Usage
 
