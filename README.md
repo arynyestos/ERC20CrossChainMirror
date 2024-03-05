@@ -11,10 +11,10 @@
 ## Introduction
 
 This repo showcases the design process of a system with two mirror (or twin, as the code is the same for both) contracts that would be deployed on two different blockchains and behave in the following way:
-    - When called, the contract on chain 1 (e.g., Sepolia) mints the specified amount of a token A
-    - After minting, contract 1 sends a message to its twin contract on chain 2 (e.g., Mumbai) featuring the aforementioned amount.
-    - Upon receiving the message, the contract on chain 2 mints the same amount of token B as minted on chain 1 of token A by its twin contract.
-    - After minting, contract 2 bridges all the tokens minted over to its mirror contract on chain 1.
+- When called, the contract on chain 1 (e.g., Sepolia) mints the specified amount of a token A
+- After minting, contract 1 sends a message to its twin contract on chain 2 (e.g., Mumbai) featuring the aforementioned amount.
+- Upon receiving the message, the contract on chain 2 mints the same amount of token B as minted on chain 1 of token A by its twin contract.
+- After minting, contract 2 bridges all the tokens minted over to its mirror contract on chain 1.
 
 Thus, the result of a workflow initiated by a transaction sent to contract 1 to have it mint 100 tokens A would be 100 tokens A and 100 tokens B stored by contract 1.
 
