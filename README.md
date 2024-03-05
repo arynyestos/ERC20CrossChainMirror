@@ -63,7 +63,7 @@ However, after the functionality for each test was achieved and it passed, imple
 
 ## Usage
 
-In order to try out the ERC20 Cross-chain Mirror system yourself, follow the following steps:
+In order to try out the ERC20 Cross-chain Mirror system yourself, follow these steps:
 1. Make sure you have [Foundry](https://book.getfoundry.sh/getting-started/installation) installed.
 2. Clone the repo:
 ```bash
