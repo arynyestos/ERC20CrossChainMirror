@@ -43,33 +43,17 @@ Below can be seen the passing results of all five tests, once the functionality 
 #### testMintERC20
 ![Test 1](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/fdf1c9f6-bf73-4c90-a283-811ad8bf6765)
 
-<p align="center">
-  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/f723aada-28fb-4f42-9d84-3777684b479b">
-</p>
 #### testMessageSentAfterMint
 ![Test 2](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/7ad1a7b7-eea3-4559-a583-40f176e4d4ee)
 
-<p align="center">
-  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/72f58125-f285-4eb5-b49b-9a9f93beac9c">
-</p>
 #### testMessageReceivedOnTwinContract
 ![Test 3](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/aaa275d5-6fcf-4f9d-b7ed-926e2176132b)
 
-<p align="center">
-  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/63813925-aea4-4bc5-80f8-8c43da839238">
-</p>
 #### testTokensMintedOnMessageReceived
 ![Test 4](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/a544c70e-0edc-4355-96c6-3a00e5a50188)
 
-<p align="center">
-  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/60dda28f-c88f-4e4d-9d7d-0d30afd9b7d7">
-</p>
 #### testTokensMintedAndBridgedOnMessageReceived
 ![Test 5](https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/3ab8f889-c777-4f2a-9658-c2dec299ae72)
-
-<p align="center">
-  <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/df00097b-7462-4d66-b3d8-bd57272950b2">
-</p>
 
 However, after the functionality for each test was achieved and it passed, implementing the functionality enforced by the following test caused the previous one to fail. This was because the addition of the subsequential actions to be performed, which needed further setup, which had not been necessary in previous tests, caused the transactions to revert. Of course, for a real project this would have to be corrected, since the goal is for all tests to pass, however, this being a challenge in which TDD was mandatory, leaving the tests as they were before the full functionality was implemented seemed like a good way to prove said methodology was used. Thus, below can be seen how, at the end of the design process, the only passing test was the last one, while all the others, as explained, lacked the necessary setup for the transactions initiated in them not to revert.
 
