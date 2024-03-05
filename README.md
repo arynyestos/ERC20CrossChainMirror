@@ -41,22 +41,27 @@ Five different tests were created to drive the development of the system:
 
 Below can be seen the passing results of all five tests, once the functionality they aimed to verify was implemented, which was done sequentially, one at a time:
 #### testMintERC20
+
 <p align="center">
   <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/f723aada-28fb-4f42-9d84-3777684b479b">
 </p>
 #### testMessageSentAfterMint
+
 <p align="center">
   <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/72f58125-f285-4eb5-b49b-9a9f93beac9c">
 </p>
 #### testMessageReceivedOnTwinContract
+
 <p align="center">
   <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/63813925-aea4-4bc5-80f8-8c43da839238">
 </p>
 #### testTokensMintedOnMessageReceived
+
 <p align="center">
   <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/60dda28f-c88f-4e4d-9d7d-0d30afd9b7d7">
 </p>
 #### testTokensMintedAndBridgedOnMessageReceived
+
 <p align="center">
   <img src="https://github.com/arynyestos/ERC20CrossChainMirror/assets/33223441/df00097b-7462-4d66-b3d8-bd57272950b2">
 </p>
