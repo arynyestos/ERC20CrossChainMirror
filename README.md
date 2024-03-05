@@ -27,7 +27,7 @@ Also, Test Driven Design was the required methodology for this challenge and it 
 
 ## Some Consideratons
 
-- Due to the fact that the goal of this project was to use the TDD methodology, which can only be done in a local testing environment, to create a cross-chain system, only one address could be specified in the tests for each token (instead of one for each chain), as well as for the CCIP router (which also has a different address on each chain it is deployed on).
+- Due to the fact that the goal of this project was to use the TDD methodology, which can only be done in a local testing environment, to create a cross-chain system, only one address could be specified in the tests for each token (instead of one for each token on each chain), as well as for the CCIP router (which also has a different address on each chain it is deployed on).
 - A key resource to be able to properly complete the task was the [MockCCIPRouter](https://github.com/smartcontractkit/ccip/blob/ccip-develop/contracts%2Fsrc%2Fv0.8%2Fccip%2Ftest%2Fmocks%2FMockRouter.sol) contract, which was not easy to find, since it does not come with the default installation of CCIP.
 
 ## Test Driven Design Process
