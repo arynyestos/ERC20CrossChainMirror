@@ -33,11 +33,11 @@ Also, Test Driven Design was the required methodology for this challenge and it 
 ## Test Driven Design Process
 
 Five different tests were created to drive the development of the system:
-    1. testMintERC20 would have to be fulfilled to check that upon calling of the function mintToken on the contract on chain 1, the token A (which in a live testnet could be the CCIP LnM token), got minted.
-    2. testMessageSentAfterMint would ensure that the message conveying the minted amount to the twin contract on chain 2 got sent.
-    3. testMessageReceivedOnTwinContract would, upon fulfillment prove that the message gets received by the contract on chain 2.
-    4. testTokensMintedOnMessageReceived checked that token B (which in a live testnet could be the CCIP BnM token) got minted by the twin contract on chain 2 in the same amount as token A on chain 1.
-    5. testTokensMintedAndBridgedOnMessageReceived ensured that, after minting, contract 2 bridged all the tokens B back to its mirror contract on chain 1.
+1. testMintERC20 would have to be fulfilled to check that upon calling of the function mintToken on the contract on chain 1, the token A (which in a live testnet could be the CCIP LnM token), got minted.
+2. testMessageSentAfterMint would ensure that the message conveying the minted amount to the twin contract on chain 2 got sent.
+3. testMessageReceivedOnTwinContract would, upon fulfillment prove that the message gets received by the contract on chain 2.
+4. testTokensMintedOnMessageReceived checked that token B (which in a live testnet could be the CCIP BnM token) got minted by the twin contract on chain 2 in the same amount as token A on chain 1.
+5. testTokensMintedAndBridgedOnMessageReceived ensured that, after minting, contract 2 bridged all the tokens B back to its mirror contract on chain 1.
 
 Below can be seen the passing results of all five tests, once the functionality they aimed to verify was implemented, which was done sequentially, one at a time:
 #### testMintERC20
