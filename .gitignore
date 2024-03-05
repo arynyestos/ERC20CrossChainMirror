@@ -13,7 +13,5 @@ docs/
 # Dotenv file
 .env
 
-# Node modules
-node_modules/
-
+node_modules
 ERC20CrossChainMirror old.sol
