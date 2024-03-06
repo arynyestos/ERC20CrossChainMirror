@@ -65,12 +65,21 @@ However, after the functionality for each test was achieved and it passed, imple
 
 In order to try out the ERC20 Cross-chain Mirror system yourself, follow these steps:
 1. Make sure you have [Foundry](https://book.getfoundry.sh/getting-started/installation) installed.
-2. Clone the repo:
+3. Clone the repo:
 ```bash
 git clone https://github.com/arynyestos/ERC20CrossChainMirror.git
 cd ERC20CrossChainMirror
 ```
-3. Run the tests:
+3. Install the necessary dependencies:
+```bash
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
+npm install @chainlink/contracts-ccip --save
+```
+As you can see, CCIP installation needed to be done using the NPM package manager. However, the following command should work too, although it would require tweaking the `remappings` in the `foundry.toml` file:
+```bash
+forge install smartcontractkit/ccip@v2.8.0-ccip1.4.2-release --no-commit
+```
+4. Run the tests:
 ```bash
 forge test
 ```
