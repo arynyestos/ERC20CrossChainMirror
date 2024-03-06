@@ -10,8 +10,7 @@ out/
 # Docs
 docs/
 
-# Dotenv file
 .env
-
+openzeppelin-contracts
 node_modules
 ERC20CrossChainMirror old.sol
